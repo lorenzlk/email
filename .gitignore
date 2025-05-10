@@ -1,0 +1,18 @@
+# Node modules (if you use npm locally)
+node_modules/
+
+# clasp project files
+.clasp.json
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
+
+# Env files (if you use them for local dev)
+.env
+.env.*
+
+# VSCode settings (optional)
+.vscode/

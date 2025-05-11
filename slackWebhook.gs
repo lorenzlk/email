@@ -2,7 +2,7 @@ function doPost(e) {
   if (!verifySlackRequest(e)) {
     return ContentService.createTextOutput('Invalid signature').setMimeType(ContentService.MimeType.TEXT);
   }
-  var params = JSON.parse(e.postData.contents);
+  var params = e.parameter;
   var slackSignature = e.parameter['X-Slack-Signature'];
   var responseUrl = params.response_url;
   var userId = params.user_id;
